@@ -1,0 +1,65 @@
+/* Basic Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+  }
+  
+  .content {
+    padding: 40px;
+  }
+  
+  .about, .missions {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 0.8s ease;
+  }
+  
+  .about.visible, .missions.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .mission-card {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .mission-card img {
+    max-width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .transparent-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .transparent-footer.visible {
+    opacity: 1;
+  }
+  
